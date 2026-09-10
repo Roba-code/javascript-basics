@@ -12,7 +12,7 @@ const checkResult = (mark) => {
 rl.question('enter student name', (name) => {
     rl.question('enter student mark', (mark) => {
         const marks=Number(mark);
-        const result = checkResult(mark);
+        const result = checkResult(marks);
         console.log (`${name}: ${result}`);
         rl.close();
     });
